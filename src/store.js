@@ -1,15 +1,7 @@
 export const initialStore=()=>{
   return{
   
-    contacts: [
-     {
-      "name": "Jenny",
-      "phone": "303-867-7378",
-      "email": "email@email.com",
-      "address": "234 north live ",
-      "id": 1
-    }
-  ]
+    contacts: []
 }
 }
 
