@@ -31,25 +31,25 @@ export const AddNewContact = () => {
             <div className="d-flex flex-colomn">
                 <form>
                     <div className="mb-3">
-                        <label for="name" className="form-label">Full Name</label>
+                        <label HtmlFor="name" className="form-label">Full Name</label>
                         <input value= {contactName} onChange={(e)=> setContactName(e.target.value)} type="name" className="form-control" id="name" aria-describedby="name"/>
                     
                     </div>
                     <div className="mb-3">
-                        <label for="email" className="form-label">Email</label>
+                        <label HtmlFor="email" className="form-label">Email</label>
                         <input value= {contactEmail} onChange={(e)=> setContactEmail(e.target.value)} type="email" className="form-control" id="email" aria-describedby="email"/>
                     </div>
                     <div className="mb-3">
-                        <label for="phone" className="form-label">Phone</label>
+                        <label HtmlFor="phone" className="form-label">Phone</label>
                         <input  value= {contactPhone} onChange={(e)=> setContactPhone(e.target.value)} type="phone" className="form-control" id="phone" aria-describedby="phone"/>
                     </div>
                     <div className="mb-3">
-                        <label for="address" className="form-label">Address</label>
+                        <label HtmlFor="address" className="form-label">Address</label>
                         <input  value= {contactAddress} onChange={(e)=> setContactAddress(e.target.value)} type="address" className="form-control" id="address" aria-describedby="address"/>
                     </div>
                     <div className="mb-3 form-check">
                         <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-                            <label className="form-check-label" for="exampleCheck1">Favorites</label>
+                            <label className="form-check-label" HtmlFor="exampleCheck1">Favorites</label>
                     </div>
                     <button type="submit" className="btn btn-primary" onClick={(e)=> postContact({
                         name: contactName,
@@ -62,4 +62,5 @@ export const AddNewContact = () => {
             </div>
         </div>
     )
+
 }
